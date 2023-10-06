@@ -8,6 +8,37 @@ export type Banners = {
   heading: string;
   startingPrice: number;
 };
+export type NavMenu = { title: string; hash: string; subCategory?: string[] };
+export const navMenu: NavMenu[] = [
+  { title: "Home", hash: "#home" },
+  {
+    title: "Men",
+    hash: "#men",
+    subCategory: ["shirt", "short & jeans", "safety shoes", "wallets"],
+  },
+  {
+    title: "Women",
+    hash: "#women",
+    subCategory: ["dress & frock", "earrings", "necklace", "make-up kit"],
+  },
+  {
+    title: "jewellery",
+    hash: "#jewellery",
+    subCategory: ["earrings", "couple rings", "necklace", "bracelets"],
+  },
+  {
+    title: "Perfume",
+    hash: "#perfume",
+    subCategory: [
+      "cloth perfume",
+      "deodorant",
+      "flower fragrance",
+      "air freshener",
+    ],
+  },
+  { title: "blog", hash: "#blog" },
+  { title: "Hot offers", hash: "#hot" },
+];
 export const banners: Banners[] = [
   {
     img: Banner1,

@@ -13,7 +13,9 @@ const Banner = ({ img, par1, heading, startingPrice }: Banners) => {
         lg:bottom-[5rem]
       "
       >
-        <p className="text-[1.1rem] text-btn-color">{par1}</p>
+        <p className="text-[1.1rem] text-btn-color sm:text-4xl font-semibold">
+          {par1}
+        </p>
         <h3 className="text-xl md:text-[2rem]  text-black sm:font-extrabold !leading-none sm:text-4xl font-semibold my-3">
           {heading}
         </h3>
